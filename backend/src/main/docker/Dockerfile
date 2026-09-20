@@ -1,5 +1,5 @@
-# Use Java 17 runtime
-FROM eclipse-temurin:17-jre
+# Use Java 21 runtime
+FROM eclipse-temurin:21-jre
 
 # Set working directory inside container
 WORKDIR /app

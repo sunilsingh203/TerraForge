@@ -26,7 +26,7 @@ works and is explainable, (2) scope stays narrow, (3) polish.
 
 ## Tech Stack
 
-- **Backend:** Java 17, Spring Boot 3.x, Maven
+- **Backend:** Java 21, Spring Boot 3.x, Maven
 - **LLM:** Google Gemini API (NL → structured JSON extraction only, never raw HCL)
 - **Templating:** Plain Java string-based templates per resource type (no templating
   framework for v1 — keep it simple and debuggable)
