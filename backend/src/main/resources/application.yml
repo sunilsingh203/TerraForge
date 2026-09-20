@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: terraformgen
+
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/terraformgen}
+    username: ${DB_USERNAME:terraformgen}
+    password: ${DB_PASSWORD:terraformgen}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+
+gemini:
+  api-key: ${GEMINI_API_KEY:}
+  api-url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent
+
+terraform:
+  cli-path: terraform
